@@ -20,6 +20,23 @@ assumption, or plausible-sounding inference.
   explicitly instead of filling the gap with a guess.
 - **Sub-agents report evidence, not conclusions alone.** A report back to Opus
   must carry the citations that support it, so synthesis rests on verified facts.
+- **Name the specimen.** A result states what it was measured on — which file,
+  which record, which device. Citing the source shows *how* you measured; naming
+  the specimen shows *what* you measured, and no citation can catch a wrong
+  specimen. "It works" without the artifact is an impression, not a result.
+- **A negative result needs a positive control.** Before reporting "X is absent",
+  prove the same check finds an X you know is there. Otherwise "not found" and
+  "my detector is broken" look identical.
+- **A proxy is not the thing.** When work ends at hardware, an external service,
+  or someone else's environment, exercise it there once — or say plainly which
+  layer you verified and what stays unverified.
+- **Agreeing is asserting.** The bar does not drop when you are supporting
+  someone else's call. A reason invented to justify a decision already made is a
+  guess wearing a citation's clothes.
+
+A recorded conclusion (memory, plan, doc) carries its specimen and the condition
+that would refute it — "green because X; if Y ever appears, this is wrong."
+Stored without both, it hardens into background truth nobody re-checks.
 
 ## Recommended (prose)
 
@@ -40,3 +57,4 @@ Sonnet = the workers.)
 - **Return → Sonnet:** once unblocked
 - **Workflows:** Opus plans + assigns sub-agents → Sonnet sub-agents run → report back to Opus → Opus synthesizes
 - **Evidence:** every claim backed by first-hand evidence, cited (`file:line`, API response, doc URL) — no memory, no assumption
+- **Specimen:** every result names what it was measured on; a negative result carries a positive control; hardware/external work is proven there, not on a proxy; agreeing with someone is still asserting
